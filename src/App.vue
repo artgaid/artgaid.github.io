@@ -5,16 +5,10 @@ import HelloWorld from "@/components/HelloWorld.vue";
 
 <template>
   <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="@/assets/logo.svg"
-      width="125"
-      height="125"
-    />
+    <img alt="Photo" class="photo" src="@/assets/image/photo.webp" />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <HelloWorld msg="Artem Gaidash" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
@@ -30,28 +24,49 @@ import HelloWorld from "@/components/HelloWorld.vue";
 @import "@/assets/base.css";
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 2rem;
+}
 
-  font-weight: normal;
+body {
+  display: flex;
+  place-items: center;
 }
 
 header {
   line-height: 1.5;
   max-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  padding-right: calc(var(--section-gap) / 2);
 }
 
-.logo {
+header .wrapper {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  flex-wrap: wrap;
+}
+
+.photo {
   display: block;
-  margin: 0 auto 2rem;
+  margin-bottom: 2rem;
+
+  border-radius: 50%;
+  border: 3px solid black;
+  width: 220px;
+  box-shadow: 0 0 0 3px white;
 }
 
 a,
 .green {
   text-decoration: none;
   color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+  transition: 0.4s all ease-in-out;
 }
 
 @media (hover: hover) {
@@ -62,9 +77,13 @@ a,
 
 nav {
   width: 100%;
-  font-size: 12px;
   text-align: center;
-  margin-top: 2rem;
+
+  margin-left: -1rem;
+  font-size: 1rem;
+
+  padding: 1rem 0;
+  margin-top: 1rem;
 }
 
 nav a.router-link-exact-active {
@@ -85,41 +104,23 @@ nav a:first-of-type {
   border: 0;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
+@media screen and (max-width: 1024px) {
   #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+
+    font-weight: normal;
   }
 
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
+  body {
+    flex-direction: column;
   }
 
   nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 2rem;
   }
 }
 </style>
