@@ -55,6 +55,8 @@ h3 {
     border-radius: 8px;
     width: 50px;
     height: 50px;
+
+    padding: 10px;
   }
 
   .item:before {

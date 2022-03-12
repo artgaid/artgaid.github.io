@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
-import HelloWorld from "@/components/HelloWorld.vue";
+import Description from "@/components/Description.vue";
 </script>
 
 <template>
@@ -8,16 +8,24 @@ import HelloWorld from "@/components/HelloWorld.vue";
     <img alt="Photo" class="photo" src="@/assets/image/photo.webp" />
 
     <div class="wrapper">
-      <HelloWorld msg="Artem Gaidash" />
+      <Description msg="Artem Gaidash" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/work-experience">Experience</RouterLink>
+        <RouterLink to="/education">Education</RouterLink>
+        <RouterLink to="/technology-stack">Technology</RouterLink>
+        <RouterLink to="/test">Test</RouterLink>
       </nav>
     </div>
   </header>
 
-  <RouterView />
+  <RouterView v-slot="{ Component }">
+    <transition name="scale" mode="out-in">
+      <component :is="Component" />
+    </transition>
+  </RouterView>
 </template>
 
 <style>
@@ -52,14 +60,19 @@ header .wrapper {
   flex-wrap: wrap;
 }
 
+main {
+  display: flex;
+  align-items: center;
+}
+
 .photo {
   display: block;
   margin-bottom: 2rem;
 
   border-radius: 50%;
-  border: 3px solid black;
+  border: 5px solid transparent;
   width: 220px;
-  box-shadow: 0 0 0 3px white;
+  box-shadow: 0 0 0 1px currentColor;
 }
 
 a,
