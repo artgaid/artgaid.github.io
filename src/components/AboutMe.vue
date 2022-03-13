@@ -60,3 +60,9 @@ import SpeakerIcon from "./icons/about/IconPublicSpeak.vue";
     </ItemList>
   </div>
 </template>
+
+<style scoped>
+ul {
+  padding-inline-start: 10px;
+}
+</style>

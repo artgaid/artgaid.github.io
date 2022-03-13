@@ -5,18 +5,22 @@ import Description from "@/components/Description.vue";
 
 <template>
   <header>
-    <img alt="Photo" class="photo" src="@/assets/image/photo.webp" />
+    <img alt="Photo" class="photo" src="@/assets/photo.webp" />
 
     <div class="wrapper">
       <Description msg="Artem Gaidash" />
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/work-experience">Experience</RouterLink>
+        <RouterLink to="/">About</RouterLink>
         <RouterLink to="/education">Education</RouterLink>
+        <RouterLink to="/work-experience">Experience</RouterLink>
         <RouterLink to="/technology-stack">Technology</RouterLink>
-        <RouterLink to="/test">Test</RouterLink>
+        <RouterLink to="/сontacts">Contacts</RouterLink>
+        <p class="more">
+          More info in my CV
+          <a target="_blank" download href="./CV/CV_En.pdf">En</a>
+          <a target="_blank" download href="./CV/CV_Ru.pdf">Ru</a>
+        </p>
       </nav>
     </div>
   </header>
@@ -32,6 +36,7 @@ import Description from "@/components/Description.vue";
 @import "@/assets/base.css";
 
 #app {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 0 2rem;
@@ -89,6 +94,9 @@ a,
 }
 
 nav {
+  position: sticky;
+  top: 0;
+
   width: 100%;
   text-align: center;
 
@@ -117,9 +125,18 @@ nav a:first-of-type {
   border: 0;
 }
 
-@media screen and (max-width: 1024px) {
+.more {
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  margin: 10px 30px 0 0;
+}
+
+@media screen and (max-width: 1240px) {
   #app {
-    max-width: 1280px;
+    width: 100%;
+    grid-template-columns: 1fr;
+
     margin: 0 auto;
     padding: 2rem;
 
@@ -130,10 +147,26 @@ nav a:first-of-type {
     flex-direction: column;
   }
 
+  header {
+    max-height: initial;
+    padding-right: 0;
+  }
+
   nav {
-    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
+
+    font-size: 15px;
     text-align: center;
     margin-top: 2rem;
+    margin-left: 0;
+  }
+
+  .more {
+    font-size: 10px;
+    margin: 10px auto 0;
   }
 }
 </style>

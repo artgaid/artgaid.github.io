@@ -94,4 +94,11 @@ import IconAgile from "./icons/technology-stack/IconAgile.vue";
 .technology-list {
   width: 100%;
 }
+
+@media screen and (max-width: 555px) {
+  .container {
+    flex-direction: column;
+    gap: 0;
+  }
+}
 </style>

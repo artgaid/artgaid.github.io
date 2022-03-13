@@ -33,4 +33,16 @@ h3 {
 .greetings h3 {
   text-align: center;
 }
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-weight: 500;
+    font-size: 2rem;
+    top: -10px;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
 </style>
