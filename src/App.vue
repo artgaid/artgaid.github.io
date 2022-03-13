@@ -15,7 +15,7 @@ import Description from "@/components/Description.vue";
         <RouterLink to="/education">Education</RouterLink>
         <RouterLink to="/work-experience">Experience</RouterLink>
         <RouterLink to="/technology-stack">Technology</RouterLink>
-        <RouterLink to="/сontacts">Contacts</RouterLink>
+        <RouterLink to="/contacts">Contacts</RouterLink>
         <p class="more">
           More info in my CV
           <a target="_blank" download href="./CV/CV_En.pdf">En</a>

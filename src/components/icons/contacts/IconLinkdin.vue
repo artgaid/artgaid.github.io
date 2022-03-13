@@ -1,6 +1,6 @@
 <template>
   <svg
-    viewBox="9 0 45 65"
+    viewBox="11 9 45 45"
     fill="#007AB9"
     opacity="80%"
     xmlns="http://www.w3.org/2000/svg"
