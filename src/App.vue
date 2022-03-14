@@ -158,14 +158,14 @@ nav a:first-of-type {
     justify-content: center;
     row-gap: 10px;
 
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 0;
     margin-left: 0;
   }
 
   .more {
-    font-size: 10px;
+    font-size: 15px;
     margin: 10px auto 0;
   }
 }
