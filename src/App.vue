@@ -18,8 +18,8 @@ import Description from "@/components/Description.vue";
         <RouterLink to="/contacts">Contacts</RouterLink>
         <p class="more">
           More info in my CV
-          <a target="_blank" download href="./CV/CV_En.pdf">En</a>
-          <a target="_blank" download href="./CV/CV_Ru.pdf">Ru</a>
+          <a target="_blank" download href="./CV_En.pdf">En</a>
+          <a target="_blank" download href="./CV_Ru.pdf">Ru</a>
         </p>
       </nav>
     </div>
