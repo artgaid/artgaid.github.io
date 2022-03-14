@@ -1,9 +1,5 @@
 <template>
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 479 430"
-    fill="currentColor"
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 479 430">
     <path
       fill-rule="evenodd"
       clip-rule="evenodd"
@@ -11,3 +7,9 @@
     />
   </svg>
 </template>
+
+<style scoped>
+svg {
+  fill: var(--color-text);
+}
+</style>

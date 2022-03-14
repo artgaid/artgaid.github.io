@@ -3,7 +3,6 @@
     xmlns="http://www.w3.org/2000/svg"
     class="svg-icon"
     viewBox="0 0 20 20"
-    fill="#FFFFFF"
     opacity="80%"
   >
     <path
@@ -20,3 +19,15 @@
     ></path>
   </svg>
 </template>
+
+<style scoped>
+svg {
+  fill: var(--vt-c-black);
+}
+
+@media (prefers-color-scheme: dark) {
+  svg {
+    fill: var(--vt-c-white);
+  }
+}
+</style>

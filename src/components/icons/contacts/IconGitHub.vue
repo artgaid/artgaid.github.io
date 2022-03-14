@@ -1,10 +1,5 @@
 <template>
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="35 0 300 310"
-    fill="white"
-    opacity="80%"
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="35 0 300 310" opacity="80%">
     <path
       fill-rule="evenodd"
       clip-rule="evenodd"
@@ -12,3 +7,15 @@
     />
   </svg>
 </template>
+
+<style scoped>
+svg {
+  fill: var(--vt-c-black);
+}
+
+@media (prefers-color-scheme: dark) {
+  svg {
+    fill: var(--vt-c-white);
+  }
+}
+</style>
