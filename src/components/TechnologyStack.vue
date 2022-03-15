@@ -8,6 +8,8 @@ import IconTest from "./icons/technology-stack/IconTest.vue";
 import IconNode from "./icons/technology-stack/IconNode.vue";
 import IconAPI from "./icons/technology-stack/IconAPI.vue";
 import IconAgile from "./icons/technology-stack/IconAgile.vue";
+import IconReact from "./icons/technology-stack/IconReact.vue";
+import IconDocker from "./icons/technology-stack/IconDocker.vue";
 </script>
 
 <template>
@@ -47,6 +49,16 @@ import IconAgile from "./icons/technology-stack/IconAgile.vue";
         <br />
         Composition API
       </ItemList>
+
+      <ItemList>
+        <template #icon>
+          <IconReact />
+        </template>
+        <template #heading>React</template>
+        <a target="_blank" href="https://nextjs.org/">NEXT.js</a> |
+        <a target="_blank" href="https://redux.js.org/">Redux</a> |
+        <a target="_blank" href="https://mui.com/">Material-UI</a>
+      </ItemList>
     </div>
 
     <div class="technology-list">
@@ -79,6 +91,15 @@ import IconAgile from "./icons/technology-stack/IconAgile.vue";
         </template>
         <template #heading>Agile</template>
         Scrum | Kanban | Waterfall
+      </ItemList>
+
+      <ItemList>
+        <template #icon>
+          <IconDocker />
+        </template>
+        <template #heading>Docker</template>
+        <a target="_blank" href="https://www.docker.com/">Docker</a> makes
+        development efficient and predictable
       </ItemList>
     </div>
   </div>
