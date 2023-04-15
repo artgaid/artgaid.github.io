@@ -10,6 +10,7 @@ import IconAPI from "./icons/technology-stack/IconAPI.vue";
 import IconAgile from "./icons/technology-stack/IconAgile.vue";
 import IconReact from "./icons/technology-stack/IconReact.vue";
 import IconDocker from "./icons/technology-stack/IconDocker.vue";
+import IconOpenAI from "@/components/icons/technology-stack/IconOpenAI.vue";
 </script>
 
 <template>
@@ -43,11 +44,10 @@ import IconDocker from "./icons/technology-stack/IconDocker.vue";
         </template>
         <template #heading>Vue</template>
         <a target="_blank" href="https://vuejs.org/">Vue 3</a> |
-        <a target="_blank" href="https://vuex.vuejs.org/">Vuex</a> |
+        <a target="_blank" href="https://vuex.vuejs.org/">Vuex</a> or
+        <a target="_blank" href="https://pinia.vuejs.org/">Pinia</a> |
         <a target="_blank" href="https://nuxtjs.org/">Nuxt</a> |
         <a target="_blank" href="https://vuetifyjs.com/">Vuetify</a>
-        <br />
-        Composition API
       </ItemList>
 
       <ItemList>
@@ -74,7 +74,8 @@ import IconDocker from "./icons/technology-stack/IconDocker.vue";
           <IconAPI />
         </template>
         <template #heading>RESTful API</template>
-        <a target="_blank" href="https://axios-http.com/">Axios</a>
+        <a target="_blank" href="https://axios-http.com/">Axios</a> |
+        <a target="_blank" href="https://vue-query.vercel.app/#/">Vue Query</a>
       </ItemList>
 
       <ItemList>
@@ -101,6 +102,15 @@ import IconDocker from "./icons/technology-stack/IconDocker.vue";
         <a target="_blank" href="https://www.docker.com/">Docker</a> makes
         development efficient and predictable
       </ItemList>
+
+      <ItemList>
+        <template #icon>
+          <IconOpenAI />
+        </template>
+        <template #heading>Open AI</template>
+        Integration and work with
+        <a target="_blank" href="https://openai.com/">Open AI</a>
+      </ItemList>
     </div>
   </div>
 </template>
@@ -110,6 +120,8 @@ import IconDocker from "./icons/technology-stack/IconDocker.vue";
   width: 100%;
   display: flex;
   gap: 20px;
+
+  align-items: center;
 }
 
 .technology-list {

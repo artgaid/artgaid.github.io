@@ -3,10 +3,24 @@ import ItemList from "./ItemList.vue";
 import StikIcon from "./icons/work/IconStik.vue";
 import UpworkIcon from "./icons/work/IconUpwork.vue";
 import GeekIcon from "./icons/work/IconGeekBrains.vue";
+import IconHFLabs from "@/components/icons/work/IconHFLabs.vue";
 </script>
 
 <template>
   <div>
+    <ItemList>
+      <template #icon>
+        <IconHFLabs />
+      </template>
+      <template #heading
+        >An IT product company
+        <a target="_blank" href="https://hflabs.ru/">H F Labs</a></template
+      >
+      <p>04.2022 — to date</p>
+      HFLabs provides customer data quality and data integration solutions and
+      services in Russia.
+    </ItemList>
+
     <ItemList>
       <template #icon>
         <StikIcon />
