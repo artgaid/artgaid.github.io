@@ -5,7 +5,9 @@ import Description from "@/components/Description.vue";
 
 <template>
   <header>
-    <img alt="Photo" class="photo" src="@/assets/photo.webp" />
+    <div class="photo">
+      <img alt="Photo" src="@/assets/photo.webp" />
+    </div>
 
     <div class="wrapper">
       <Description msg="Artem Gaidash" />
@@ -71,13 +73,29 @@ main {
 }
 
 .photo {
-  display: block;
-  margin-bottom: 2rem;
+  width: 220px;
+  height: 220px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   border-radius: 50%;
   border: 5px solid transparent;
-  width: 220px;
   box-shadow: 0 0 0 1px currentColor;
+
+  margin-bottom: 2rem;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
 }
 
 a,
