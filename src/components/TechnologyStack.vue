@@ -27,7 +27,10 @@ import IconOpenAI from "@/components/icons/technology-stack/IconOpenAI.vue";
           <IconCSS />
         </template>
         <template #heading>CSS</template>
-        Scss | Sass
+
+        <div class="technology-description">
+          Scss | Sass
+        </div>
       </ItemList>
 
       <ItemList>
@@ -35,6 +38,7 @@ import IconOpenAI from "@/components/icons/technology-stack/IconOpenAI.vue";
           <IconJS />
         </template>
         <template #heading>JavaScript</template>
+
         <a target="_blank" href="https://www.typescriptlang.org/">TypeScript</a>
       </ItemList>
 
@@ -43,11 +47,15 @@ import IconOpenAI from "@/components/icons/technology-stack/IconOpenAI.vue";
           <IconVue />
         </template>
         <template #heading>Vue</template>
-        <a target="_blank" href="https://vuejs.org/">Vue 3</a> |
-        <a target="_blank" href="https://vuex.vuejs.org/">Vuex</a> or
-        <a target="_blank" href="https://pinia.vuejs.org/">Pinia</a> |
-        <a target="_blank" href="https://nuxtjs.org/">Nuxt</a> |
-        <a target="_blank" href="https://vuetifyjs.com/">Vuetify</a>
+
+        <div class="technology-description">
+          <a target="_blank" href="https://vuejs.org/">Vue 3</a> |
+          <a target="_blank" href="https://vuex.vuejs.org/">Vuex</a> or
+          <a target="_blank" href="https://pinia.vuejs.org/">Pinia</a> |
+          <a target="_blank" href="https://nuxt.com/">Nuxt 3</a> |
+          <a target="_blank" href="https://vuetifyjs.com/">Vuetify</a>
+        </div>
+
       </ItemList>
 
       <ItemList>
@@ -55,9 +63,12 @@ import IconOpenAI from "@/components/icons/technology-stack/IconOpenAI.vue";
           <IconReact />
         </template>
         <template #heading>React</template>
-        <a target="_blank" href="https://nextjs.org/">NEXT.js</a> |
-        <a target="_blank" href="https://redux.js.org/">Redux</a> |
-        <a target="_blank" href="https://mui.com/">Material-UI</a>
+
+        <div class="technology-description">
+          <a target="_blank" href="https://nextjs.org/">NEXT.js</a> |
+          <a target="_blank" href="https://redux.js.org/">Redux</a> |
+          <a target="_blank" href="https://mui.com/">Material-UI</a>
+        </div>
       </ItemList>
     </div>
 
@@ -74,8 +85,12 @@ import IconOpenAI from "@/components/icons/technology-stack/IconOpenAI.vue";
           <IconAPI />
         </template>
         <template #heading>RESTful API</template>
-        <a target="_blank" href="https://axios-http.com/">Axios</a> |
-        <a target="_blank" href="https://vue-query.vercel.app/#/">Vue Query</a>
+
+        <div class="technology-description">
+          <a target="_blank" href="https://axios-http.com/">Axios</a> |
+          <a target="_blank" href="https://vue-query.vercel.app/#/">Vue Query</a>
+        </div>
+
       </ItemList>
 
       <ItemList>
@@ -83,6 +98,7 @@ import IconOpenAI from "@/components/icons/technology-stack/IconOpenAI.vue";
           <IconNode />
         </template>
         <template #heading>Node.js</template>
+
         <a target="_blank" href="https://expressjs.com/">Express</a>
       </ItemList>
 
@@ -91,7 +107,10 @@ import IconOpenAI from "@/components/icons/technology-stack/IconOpenAI.vue";
           <IconAgile />
         </template>
         <template #heading>Agile</template>
-        Scrum | Kanban | Waterfall
+
+        <div class="technology-description">
+          Scrum | Kanban | Waterfall
+        </div>
       </ItemList>
 
       <ItemList>
@@ -99,8 +118,11 @@ import IconOpenAI from "@/components/icons/technology-stack/IconOpenAI.vue";
           <IconDocker />
         </template>
         <template #heading>Docker</template>
-        <a target="_blank" href="https://www.docker.com/">Docker</a> makes
-        development efficient and predictable
+
+        <div class="technology-description">
+          <a target="_blank" href="https://www.docker.com/">Docker</a> makes
+          development efficient and predictable
+        </div>
       </ItemList>
 
       <ItemList>
@@ -108,8 +130,11 @@ import IconOpenAI from "@/components/icons/technology-stack/IconOpenAI.vue";
           <IconOpenAI />
         </template>
         <template #heading>Open AI</template>
-        Integration and work with
-        <a target="_blank" href="https://openai.com/">Open AI</a>
+
+        <div class="technology-description">
+          Integration and work with
+          <a target="_blank" href="https://openai.com/">Open AI</a>
+        </div>
       </ItemList>
     </div>
   </div>
@@ -126,6 +151,16 @@ import IconOpenAI from "@/components/icons/technology-stack/IconOpenAI.vue";
 
 .technology-list {
   width: 100%;
+}
+
+.technology-description {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  grid-gap: 5px;
+
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 555px) {

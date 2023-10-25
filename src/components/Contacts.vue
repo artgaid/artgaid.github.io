@@ -40,7 +40,7 @@ import IconPhone from "./icons/contacts/IconPhone.vue";
           <IconInst />
         </template>
         <template #heading
-          ><a target="_blank" href="https://www.instagram.com/art_gaid.vue"
+          ><a target="_blank" href="https://www.instagram.com/artem_gaidash"
             >Instagram</a
           ></template
         >

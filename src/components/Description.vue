@@ -11,7 +11,7 @@ defineProps({
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
     <h3>
-      Creative and self-starting Front-End Developer.
+      Creative and self-starting Frontend developer.
       <br />
       I create stable websites and apps in a modern IT environment.
     </h3>

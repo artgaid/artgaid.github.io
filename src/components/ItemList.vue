@@ -4,7 +4,7 @@
       <slot name="icon"></slot>
     </i>
     <div class="details">
-      <h3>
+      <h3 v-if="$slots.heading">
         <slot name="heading"></slot>
       </h3>
       <slot></slot>
@@ -28,6 +28,10 @@ i svg {
 .details {
   flex: 1;
   margin-left: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 i {

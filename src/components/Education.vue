@@ -28,7 +28,7 @@ import UniversityIcon from "./icons/IconUniversity.vue";
       <template #icon>
         <CoursesIcon />
       </template>
-      <template #heading>GeekBrains University</template>
+      <template #heading>Skyeng School</template>
       IT English courses
     </ItemList>
   </div>
